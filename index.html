@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+
+    <script src="https://kit.fontawesome.com/716480e4a3.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> A Healthier Tomorrow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+
+
+
+    <section class="header">
+ 
+       <nav>
+           <a href="index.html"><img src="Images/AhT.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+           
+            
+ 
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html"> NURSING HOMES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="staff.html">STAFF</a></li>
+                <li><a href="blog.html">LEAVE A COMMENT</a></li>
+                <li><a href="Bot.html">OUR BOT</a></li>
+                <li><a href="App.html">OUR APP</a></li>
+           </ul>
+ 
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()" ></i>
+       </nav>
+       
+       <div class="text-box">
+        <h1>A Healthier Tommorow</h1>
+       
+        <p> Ensuring a heathier tommorow</p>
+      <a href="bookappointment.html" class="hero-btn">Book An Appointment</a>
+     
+       </div>
+
+    </section>
+    
+<section class="footer">
+
+    <h4> ABOUT US</h4>
+    <p>A Healthier Tomorrow</p>
+    <div class="icons">
+
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+
+
+    </div>
+
+    <p> Made By Anav Patel</p><!--  <p> Made With <i class="fas fa-heart"></i> by NifftysMediaDesign</p> -->
+
+</section>
+
+
+ 
+<article id="content-copy">
+    hi
+</article>    
+<button id="btn-copy">Copy</button>
+<script>
+    const copyButton = document.getElementById('btn-copy');
+
+    copyButton.addEventListener('click', (event) => {
+        const content = document.getElementById('content-copy').textContent;
+        navigator.clipboard.writeText(content);
+        const copied = navigator.clipboard.readText();
+        console.log(copied);
+    })
+</script>
+
+    <script>
+       
+ 
+        var navLinks = document.getElementById("navLinks");
+ 
+ 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+ 
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+    </script>
+</body>
+</html>
